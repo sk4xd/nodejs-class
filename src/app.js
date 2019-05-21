@@ -26,16 +26,16 @@ app.use(express.static(pubDirectory))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        content: 'Andrew Mead',
-        name: 'Andrew Mead'
+        content: 'Hello!',
+        name: 'Jorge Augusto Delgado'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About page',
-        content: 'This is the about content.',
-        name: 'Andrew Mead'
+        content: 'This site was created by Jorge Augusto Delgado, it uses data from mapbox.com and darksky.net!',
+        name: 'Jorge Augusto Delgado'
     })
 })
 
@@ -43,7 +43,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help page!',
         content: 'Your in the help page! :).',
-        name: 'Andrew Mead'
+        name: 'Jorge Augusto Delgado'
     })
 })
 
